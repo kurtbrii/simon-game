@@ -29,6 +29,9 @@ body .boxes {
     grid-template-columns: 1fr;
   }
 }
+body .boxes button {
+  cursor: pointer;
+}
 body .boxes__card {
   width: 200px;
   height: 200px;
