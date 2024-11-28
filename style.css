@@ -1,3 +1,7 @@
+.error {
+  background-color: #E3442B;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -74,9 +74,15 @@ function playAudio(id) {
 
 function gameOver() {
   // basically resets everything
+  playAudio("wrong");
   counter = 0;
   inGame = false;
   gamePattern = [];
   level = 0;
   $("h1").html("Try Again!<br/>(Press any Key to Start)");
+
+  $("body").addClass("error");
+  setTimeout(() => {
+    $("body").removeClass("error");
+  }, 50);
 }
