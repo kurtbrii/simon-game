@@ -1,0 +1,47 @@
+$font: "Silkscreen", serif
+
+*
+  margin: 0
+  padding: 0
+
+body
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #17153B
+
+  h1
+    margin: 30px
+    margin-top: 50px
+    text-align: center
+    color: #F5E8C7
+    font-size: 3rem
+    font-family: $font
+    font-optical-sizing: auto
+
+  .boxes
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-auto-flow: row
+    gap: 1.5rem
+
+    @media (max-width: 600px)  // Adjust breakpoint as needed
+      grid-template-columns: 1fr // Single column
+
+    &__card
+      width: 200px
+      height: 200px
+      border: 10px solid black
+      border-radius: 15px
+
+      &--red
+        background: red
+
+      &--blue
+        background: blue
+
+      &--green
+        background: green
+
+      &--yellow
+        background: yellow
